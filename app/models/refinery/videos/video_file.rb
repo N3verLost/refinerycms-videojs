@@ -50,6 +50,8 @@ module Refinery
           else
             self.file_mime_type = 'video/mp4'
           end
+        else
+          self.file_mime_type = mime_type
         end
 
       end

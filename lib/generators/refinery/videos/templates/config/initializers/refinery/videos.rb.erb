@@ -12,10 +12,11 @@ Refinery::Videos.configure do |config|
     # config.skin_css_class = <%= Refinery::Videos.skin_css_class %>
 
     # Configure Dragonfly
-    # config.dragonfly_secret = <%= Refinery::Videos.dragonfly_secret %>
+    # config.dragonfly_secret = "<%= Refinery::Videos.dragonfly_secret %>"
     # If you decide to trust file extensions replace :ext below with :format
-    # config.dragonfly_url_format = <%= Refinery::Videos.dragonfly_url_format %>
-    # config.datastore_root_path = <%= Refinery::Videos.datastore_root_path %>
-    # config.trust_file_extensions = <%= Refinery::Videos.trust_file_extensions %>
+    # config.dragonfly_url_format = "<%= Refinery::Videos.dragonfly_url_format %>"
+    # config.datastore_root_path = "<%= Refinery::Videos.datastore_root_path %>"
+    # config.datastore_server_root = "<%= Refinery::Videos.datastore_server_root %>"
+    # config.trust_file_extensions = "<%= Refinery::Videos.trust_file_extensions %>"
 
 end

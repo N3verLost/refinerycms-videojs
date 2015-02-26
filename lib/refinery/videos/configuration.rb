@@ -6,7 +6,8 @@ module Refinery
                     :max_file_size, :pages_per_dialog, :pages_per_admin_index,
                     :s3_backend, :s3_bucket_name, :s3_region,
                     :s3_access_key_id, :s3_secret_access_key,
-                    :datastore_root_path, :trust_file_extensions, :whitelisted_mime_types, :skin_css_class
+                    :datastore_root_path, :datastore_server_root,
+                    :trust_file_extensions, :whitelisted_mime_types, :skin_css_class
 
     self.dragonfly_secret = Refinery::Core.dragonfly_secret
     self.dragonfly_url_format = '/system/videos/:job/:basename.:format'
@@ -20,6 +21,10 @@ module Refinery
     class << self
       def datastore_root_path
         config.datastore_root_path || (Rails.root.join('public', 'system', 'refinery', 'videos').to_s if Rails.root)
+      end
+
+      def datastore_server_root
+        config.datastore_server_root || (Rails.root.join('public').to_s if Rails.root)
       end
 
       def s3_backend

@@ -13,7 +13,8 @@ module Refinery
           app_videos.configure do
             # datastore ::Dragonfly::DataStorage::MongoDataStore.new(:db => MongoMapper.database)
             datastore :file, {
-              :root_path => Refinery::Videos.datastore_root_path
+              :root_path => Refinery::Videos.datastore_root_path,
+              :server_root => Refinery::Videos.datastore_server_root
             }
             url_format Refinery::Videos.dragonfly_url_format
             secret Refinery::Videos.dragonfly_secret
