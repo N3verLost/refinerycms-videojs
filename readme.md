@@ -1,5 +1,5 @@
 # Refinery CMS Video.js
-## Sorry, not supported. See forks.
+
 Simple video extension for [Refinery CMS](http://refinerycms.com).
 It adds a 'Videos' tab to admin menu where you can manage videos.
 And adds an 'add video' link to WYMeditor on 'Pages'.
@@ -48,7 +48,7 @@ gem 'refinerycms-videojs'
 ```
 Get the latest version with:
 ```ruby
-gem 'refinerycms-videojs', git: 'git@github.com:adexin-team/refinerycms-videojs.git'
+gem 'refinerycms-videojs', git: 'git@github.com:N3verLost/refinerycms-videojs.git'
 ```
 
 Now, run: 
@@ -67,4 +67,4 @@ And you're done.
 
 ## More Information
 - Check out Refinery CMS [guides](http://refinerycms.com/guides)
-- Check out our [website](http://adexin.com)
+- Check out Adexin [website](http://adexin.com)
